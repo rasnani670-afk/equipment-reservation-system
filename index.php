@@ -32,7 +32,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url("skul.GIF") no-repeat center center fixed;
+            background: url("skul.gif") no-repeat center center fixed;
             background-size: cover;
             filter: blur(8px);
             z-index: 0;
@@ -159,13 +159,15 @@
 <body>
     <div class="bg-overlay"></div>
     <div class="login-container">
-        <img src="ub.JPG" alt="UB Logo">
+        <img src="ub.jpg" alt="UB Logo">
         <h2>Login</h2>
             <p style="color: red;"></p>
-        <form method="POST">
-            <input type="text" name="username" placeholder="Username" required>
-            <input type="password" name="password" placeholder="Password" required>
-            <button type="submit" onclick="window.location.href='admin_dashboard.php';">Login</button>
+<form method="POST" action="admin_dashboard.php"> <!-- Change to your actual handler script -->
+    <input type="text" name="username" placeholder="Username" required>
+    <input type="password" name="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+</form>
+
 
 
         </form>
