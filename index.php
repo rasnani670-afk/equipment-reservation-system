@@ -32,7 +32,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: url("../M/skul.GIF") no-repeat center center fixed;
+            background: url("skul.GIF") no-repeat center center fixed;
             background-size: cover;
             filter: blur(8px);
             z-index: 0;
@@ -159,15 +159,15 @@
 <body>
     <div class="bg-overlay"></div>
     <div class="login-container">
-        <img src="../M/ub.JPG" alt="UB Logo">
+        <img src="ub.JPG" alt="UB Logo">
         <h2>Login</h2>
-        <?php if ($error): ?>
-            <p style="color: red;"><?php echo htmlspecialchars($error); ?></p>
-        <?php endif; ?>
+            <p style="color: red;"></p>
         <form method="POST">
             <input type="text" name="username" placeholder="Username" required>
             <input type="password" name="password" placeholder="Password" required>
-            <button type="submit">Login</button>
+            <button type="submit" onclick="window.location.href='admin_dashboard.php';">Login</button>
+
+
         </form>
         <p><a href="forgot-password.php" class="forgot-password-link">Forgot Password?</a></p>
     </div>
