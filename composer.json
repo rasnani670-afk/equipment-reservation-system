@@ -1,7 +1,5 @@
 {
-  "name": "your-username/equipment-reservation-system",
-  "description": "Equipment Reservation System in PHP",
-  "require": {
-    "php": ">=7.4"
-  }
+    "require": {
+        "phpmailer/phpmailer": "^6.9"
+    }
 }
